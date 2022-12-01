@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L00150620_Geil_Festival.View.Stages"
+             Title="Stages">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="logo.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="150"
+                       WidthRequest="150" />
+
+            <Image Source="map.png"
+                       Aspect="AspectFill"
+                       HeightRequest="300"
+                       WidthRequest="300" />
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Stages Display Page"
+                FontSize="24"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="This page will display either a list of stages that are currently existing within the ground, or a potential map that highlights each stage location."
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

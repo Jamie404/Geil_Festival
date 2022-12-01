@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--// Author: L00150620 - Jamie McGee
+// Class: Applied Computing
+// Module: Cross-Platform Development
+// Lecturer: Dr. Shane Wilson-->
+
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:view="clr-namespace:L00150620_Geil_Festival.View"
+            x:Class="L00150620_Geil_Festival.FlyoutShellPage"
+            FlyoutBackgroundColor="#edddd4"
+            FlyoutWidth="200"
+            Shell.BackgroundColor="#c44536"
+            Shell.ForegroundColor="#edddd4"
+            Shell.TitleColor="GhostWhite"
+            Title="L00150620 - Jamie McGee - Géil Music Festival App">
+
+    <Shell.FlyoutHeader>
+        <ImageButton Source="logo.jpg"
+                       Aspect="AspectFit"
+                       HeightRequest="100"
+                       WidthRequest="100" />
+
+    </Shell.FlyoutHeader>
+
+    <ShellContent
+            Title="Home"
+            Icon="home.png"
+            ContentTemplate="{DataTemplate view:Home}">
+    </ShellContent>
+
+    <FlyoutItem
+        Title="Line-up"
+        Icon="days.png">
+
+        <ShellContent
+            Title="Day 1"
+            Icon="day11.png"
+            ContentTemplate="{DataTemplate view:Day1}">
+        </ShellContent>
+
+        <ShellContent
+            Title="Day 2"
+            Icon="day22.png"
+            ContentTemplate="{DataTemplate view:Day2}">
+        </ShellContent>
+
+    </FlyoutItem>
+
+    <ShellContent
+            Title="Scheduler"
+            Icon="schedule.png"
+            ContentTemplate="{DataTemplate view:Scheduler}">
+    </ShellContent>
+
+    <ShellContent
+            Title="Stages"
+            Icon="stages.png"
+            ContentTemplate="{DataTemplate view:Stages}">
+    </ShellContent>
+
+    <ShellContent
+            Title="Vendors"
+            Icon="vendor.png"
+            ContentTemplate="{DataTemplate view:Vendors}">
+    </ShellContent>
+
+    <ShellContent
+            Title="Sponsors"
+            Icon="sponsors.png"
+            ContentTemplate="{DataTemplate view:Sponsors}">
+    </ShellContent>
+
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+            <GradientStop Color="#772e25" Offset="0.0"/>
+            <GradientStop Color="#c44536" Offset="1.2"/>
+            <GradientStop Color="#edddd4" Offset="1.6"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
+
+</Shell>

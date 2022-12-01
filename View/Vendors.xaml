@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L00150620_Geil_Festival.View.Vendors"
+             Title="Vendors">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="logo.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="150"
+                       WidthRequest="150" />
+
+            <Image Source="vendor.png"
+                       Aspect="AspectFill"
+                       HeightRequest="300"
+                       WidthRequest="300" />
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Vendors Resource Page"
+                FontSize="24"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="This is a page of the available vendors and resources that are able to be acquired within the festival grounds."
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

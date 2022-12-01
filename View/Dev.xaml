@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L00150620_Geil_Festival.View.Dev"
+             Title="Dev"
+             BackgroundColor="Black">
+    <VerticalStackLayout>
+        <Label 
+            TextColor="GhostWhite"
+            FontSize="50"
+            Text="Page Under Construction!!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image Source="warning.png"
+                       HeightRequest="150"
+                       WidthRequest="300" />
+    </VerticalStackLayout>
+</ContentPage>
