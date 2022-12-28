@@ -1,42 +1,18 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace L00150620_Geil_Festival.ViewModel
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public partial class BaseViewModel : ObservableObject
     {
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(IsNotBusy))]
         bool _isBusy;
+        [ObservableProperty]
         string _pageTitle;
 
-        public bool IsBusy
-        {
-            get => _isBusy;
-            set
-            {
-                if (_isBusy = value)
-                    return;
-                _isBusy = value;
-                OnPropertyChanged(nameof(IsBusy));
-            }
-        }
-
-        public string PageTitle
-        {
-            get => _pageTitle;
-            set
-            {
-                if (_pageTitle == value)
-                    return;
-                _pageTitle = value;
-            }
-        }
         public bool IsNotBusy => !IsBusy;
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string name)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
     }
 
 }
