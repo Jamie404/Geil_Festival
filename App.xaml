@@ -9,8 +9,8 @@
             <Color x:Key="PrimaryDark">#274472</Color>
             <Color x:Key="Accent">#197278</Color>
 
-            <Color x:Key="LightBackground">#edddd4</Color>
-            <Color x:Key="DarkBackground">#edddd4</Color>
+            <Color x:Key="LightBackground">#F6F6DB</Color>
+            <Color x:Key="DarkBackground">#F6F6DB</Color>
             <Color x:Key="Black">Black</Color>
             
             <Style TargetType="SearchBar" ApplyToDerivedTypes="True">

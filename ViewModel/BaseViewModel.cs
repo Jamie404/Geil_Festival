@@ -14,5 +14,4 @@ namespace L00150620_Geil_Festival.ViewModel
 
         public bool IsNotBusy => !IsBusy;
     }
-
 }

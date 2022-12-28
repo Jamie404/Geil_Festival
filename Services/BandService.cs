@@ -19,7 +19,7 @@ namespace L00150620_Geil_Festival.Services
             {
                 return _bandList;
             }
-            using var stream = await FileSystem.OpenAppPackageFileAsync("Bands.json");
+            using var stream = await FileSystem.OpenAppPackageFileAsync("bands.json");
             using var reader = new StreamReader(stream);
             var contents = await reader.ReadToEndAsync();
             _bandList = JsonSerializer.Deserialize<List<Band>>(contents);

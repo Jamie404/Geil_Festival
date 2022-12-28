@@ -9,10 +9,10 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:view="clr-namespace:L00150620_Geil_Festival.View"
             x:Class="L00150620_Geil_Festival.FlyoutShellPage"
-            FlyoutBackgroundColor="#edddd4"
+            FlyoutBackgroundColor="#F6F6DB"
             FlyoutWidth="200"
-            Shell.BackgroundColor="#c44536"
-            Shell.ForegroundColor="#edddd4"
+            Shell.BackgroundColor="#A7D489"
+            Shell.ForegroundColor="#F6F6DB"
             Shell.TitleColor="GhostWhite"
             Title="L00150620 - Jamie McGee - Géil Music Festival App">
 
@@ -75,9 +75,9 @@
     <Shell.FlyoutBackdrop>
         <LinearGradientBrush StartPoint="0,0"
                              EndPoint="0,1">
-            <GradientStop Color="#772e25" Offset="0.0"/>
-            <GradientStop Color="#c44536" Offset="1.2"/>
-            <GradientStop Color="#edddd4" Offset="1.6"/>
+            <GradientStop Color="#D5E7B8" Offset="0.0"/>
+            <GradientStop Color="#ECEBC9" Offset="0.6"/>
+            <GradientStop Color="#F6F6DB" Offset="1.0"/>
         </LinearGradientBrush>
     </Shell.FlyoutBackdrop>
 
