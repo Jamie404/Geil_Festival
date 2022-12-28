@@ -38,7 +38,7 @@ namespace L00150620_Geil_Festival.ViewModel
             {
                 Debug.WriteLine(ex);
                 // Display an alert if an exception is raised
-                await Shell.Current.DisplayAlert("Error", "Unable to get bands/artists", "OK");
+                await Shell.Current.DisplayAlert("Error", "Unable to get Bands / Artists", "OK");
             }
             finally
             {

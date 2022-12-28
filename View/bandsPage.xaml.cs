@@ -1,8 +1,8 @@
 namespace L00150620_Geil_Festival.View;
 
-public partial class Dev : ContentPage
+public partial class bandsPage : ContentPage
 {
-	public Dev()
+	public bandsPage()
 	{
 		InitializeComponent();
 	}

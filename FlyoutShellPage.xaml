@@ -55,6 +55,12 @@
     </ShellContent>
 
     <ShellContent
+            Title="Bands"
+            Icon="bands.png"
+            ContentTemplate="{DataTemplate view:bandsPage}">
+    </ShellContent>
+
+    <ShellContent
             Title="Stages"
             Icon="stages.png"
             ContentTemplate="{DataTemplate view:Stages}">

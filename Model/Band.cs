@@ -13,13 +13,10 @@ namespace L00150620_Geil_Festival.Model
 {
     public class Band
     {
-        public int ID { get; set; }
-        public string BandName { get; set; }
-        public string Genre { get; set; }
-        public string Stage1 { get; set; }
-        public string Time1 { get; set; }
-        public string Stage2 { get; set; }
-        public string Time2 { get; set; }
-        public string BandPic { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string genre { get; set; }
+        public string bio { get; set; }
+        public string bandPic { get; set; }
     }
 }
