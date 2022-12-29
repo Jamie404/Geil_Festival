@@ -7,9 +7,81 @@
              x:Class="L00150620_Geil_Festival.View.bandsPage"
              Title="Bands / Artists">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*,Auto"
+          RowSpacing="0">
+
+            <CollectionView BackgroundColor="Transparent"
+                        Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Band}"
+                        SelectionMode="None">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Band">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="125"
+                               Padding="0">
+                                <Grid ColumnDefinitions="*, 2*"
+                                  RowDefinitions="*,*,*,*"
+                                  Padding="0">
+                                    <Label Text="ID"
+                                       Style="{StaticResource LargeLabel}"
+                                       Grid.Row="0"
+                                       Grid.Column="0"/>
+
+                                    <Label Text="Name"
+                                       Style="{StaticResource LargeLabel}"
+                                       Grid.Row="1"
+                                       Grid.Column="0"/>
+
+                                    <Label Text="Genre"
+                                       Style="{StaticResource LargeLabel}"
+                                       Grid.Row="2"
+                                       Grid.Column="0"/>
+
+                                    <Label Text="Bio"
+                                       Style="{StaticResource LargeLabel}"
+                                       Grid.Row="3"
+                                       Grid.Column="0"/>
+
+                                    <Label Text="{Binding id}"
+                                       Style="{StaticResource SmallLabel}"
+                                       Grid.Row="0"
+                                       Grid.Column="1"/>
+
+                                    <Label Text="{Binding name}"
+                                       Style="{StaticResource SmallLabel}"
+                                       Grid.Row="1"
+                                       Grid.Column="1"/>
+
+                                    <Label Text="{Binding genre}"
+                                       Style="{StaticResource SmallLabel}"
+                                       Grid.Row="2"
+                                       Grid.Column="1"/>
+
+                                    <Label Text="{Binding bio}"
+                                       Style="{StaticResource SmallLabel}"
+                                       Grid.Row="3"
+                                       Grid.Column="1"/>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Text="Get People"
+                Style="{StaticResource ButtonOutline}"
+                Command="{Binding GetBandCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1"
+                Margin="8"/>
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"/>
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

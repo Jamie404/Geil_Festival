@@ -58,6 +58,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="View\bandsPage.xaml.cs">
+	    <DependentUpon>bandsPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="FlyoutShellPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

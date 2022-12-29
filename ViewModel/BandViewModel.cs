@@ -29,7 +29,7 @@ namespace L00150620_Geil_Festival.ViewModel
                 IsBusy = true;
                 var bands = await _bandService.GetBandFileAsync();
                 if (bands.Count != 0)
-                    bands.Clear();
+                    Band.Clear();
 
                 foreach (var band in bands)
                     Band.Add(band);
