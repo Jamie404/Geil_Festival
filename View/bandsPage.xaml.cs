@@ -8,5 +8,6 @@ public partial class bandsPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext= viewModel;
+		viewModel.GetBandCommand.Execute(viewModel);
 	}
 }

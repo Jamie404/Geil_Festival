@@ -27,9 +27,9 @@ public static class MauiProgram
         // Register the viewModel
         builder.Services.AddSingleton<BandViewModel>();
         // Register the MainPage
-        builder.Services.AddSingleton<FlyoutShellPage>();
+        builder.Services.AddTransient<FlyoutShellPage>();
         // Register the bandsPage
-        builder.Services.AddSingleton<bandsPage>();
+        builder.Services.AddTransient<bandsPage>();
 
         return builder.Build();
     }
