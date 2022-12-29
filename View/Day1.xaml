@@ -8,7 +8,7 @@
         <VerticalStackLayout>
 
             <SearchBar Placeholder="Search through sets.."/>
-            
+
             <Grid 
                 ColumnDefinitions="Auto,Auto,*"
                 RowDefinitions="Auto, Auto, Auto">

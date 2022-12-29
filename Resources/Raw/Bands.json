@@ -1,20 +1,73 @@
-[{"id":1,"name":"Dorian","genre":"Drama","bio":"Total 3rd generation extranet","bandPic":"https://robohash.org/blanditiisipsamlaudantium.png?size=150x150&set=set1"},
-{"id":2,"name":"Alfy","genre":"Drama","bio":"Digitized system-worthy conglomeration","bandPic":"https://robohash.org/quoducimusreiciendis.png?size=150x150&set=set1"},
-{"id":3,"name":"Joshia","genre":"Documentary","bio":"Versatile explicit encoding","bandPic":"https://robohash.org/voluptateslaboreet.png?size=150x150&set=set1"},
-{"id":4,"name":"Farlee","genre":"Drama","bio":"Persevering bi-directional firmware","bandPic":"https://robohash.org/autenimexplicabo.png?size=150x150&set=set1"},
-{"id":5,"name":"Patrice","genre":"Comedy|Romance","bio":"Horizontal tangible database","bandPic":"https://robohash.org/sitiureexpedita.png?size=150x150&set=set1"},
-{"id":6,"name":"Carline","genre":"Drama|Film-Noir","bio":"Open-source local complexity","bandPic":"https://robohash.org/magnamesteligendi.png?size=150x150&set=set1"},
-{"id":7,"name":"Livvy","genre":"Drama","bio":"De-engineered solution-oriented capacity","bandPic":"https://robohash.org/doloremqueaperiamdicta.png?size=150x150&set=set1"},
-{"id":8,"name":"Teador","genre":"Action|Horror|Sci-Fi","bio":"Integrated directional alliance","bandPic":"https://robohash.org/commodieosaut.png?size=150x150&set=set1"},
-{"id":9,"name":"Aeriel","genre":"Crime|Drama|Film-Noir|Thriller","bio":"Diverse systemic complexity","bandPic":"https://robohash.org/earumfaceresaepe.png?size=150x150&set=set1"},
-{"id":10,"name":"Lena","genre":"Action|Drama|Mystery|Sci-Fi|Thriller|IMAX","bio":"Open-architected bandwidth-monitored complexity","bandPic":"https://robohash.org/corruptietquidem.png?size=150x150&set=set1"},
-{"id":11,"name":"Lorenzo","genre":"Children|Comedy|Romance","bio":"Enhanced discrete matrix","bandPic":"https://robohash.org/ipsammolestiasid.png?size=150x150&set=set1"},
-{"id":12,"name":"Byran","genre":"Comedy|Crime","bio":"Monitored maximized leverage","bandPic":"https://robohash.org/reiciendisnullamagni.png?size=150x150&set=set1"},
-{"id":13,"name":"Morris","genre":"Action|Comedy|Romance|Western","bio":"Innovative multi-tasking frame","bandPic":"https://robohash.org/totamnatusnihil.png?size=150x150&set=set1"},
-{"id":14,"name":"Jonathon","genre":"Horror|Thriller","bio":"Adaptive tangible ability","bandPic":"https://robohash.org/similiqueundeet.png?size=150x150&set=set1"},
-{"id":15,"name":"Elfrida","genre":"Action|Adventure|Animation|Sci-Fi","bio":"Polarised methodical circuit","bandPic":"https://robohash.org/inetnostrum.png?size=150x150&set=set1"},
-{"id":16,"name":"Robbi","genre":"Documentary","bio":"Customizable methodical toolset","bandPic":"https://robohash.org/quisquammolestiaefuga.png?size=150x150&set=set1"},
-{"id":17,"name":"Jay","genre":"Adventure|Comedy|Romance","bio":"Profit-focused multi-state Graphical User Interface","bandPic":"https://robohash.org/aperiamundeex.png?size=150x150&set=set1"},
-{"id":18,"name":"Emile","genre":"Drama|Romance","bio":"Optimized explicit knowledge user","bandPic":"https://robohash.org/remodiosunt.png?size=150x150&set=set1"},
-{"id":19,"name":"Leshia","genre":"Crime|Horror|Mystery","bio":"Visionary fault-tolerant middleware","bandPic":"https://robohash.org/velitisteautem.png?size=150x150&set=set1"},
-{"id":20,"name":"Kyle","genre":"Horror|Thriller","bio":"Up-sized static standardization","bandPic":"https://robohash.org/porrorecusandaesequi.png?size=150x150&set=set1"}]
+[
+  {
+    "id": 1,
+    "name": "Scratchy Fx",
+    "bio": "Hailing from the London massive, Scratchy FX comes with a huge line-up of Drum 'N Base and Jungle tracks for the fans!",
+    "genre": "Jungle",
+    "bandPic": "band1.jpg"
+
+  },
+  {
+    "id": 2,
+    "name": "Raining Zing",
+    "genre": "Soul",
+    "bio": "Zing is an up and coming artist based in Zimbabwee, here in Ireland to soothe the hearts of the people with her smooth tones.",
+    "bandPic": "band2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Three Melons",
+    "genre": "Rock",
+    "bio": "The three melons are a local band debuting in the Géil festival. Their signature off-time swing rock will surely get the crowd jamming through the night!",
+    "bandPic": "band3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "The Book Goobers",
+    "genre": "Rock",
+    "bio": "Old timers coming in from the US of A, these gentleman will bring the classics such as the best of ZZ Top and Black Sabbath. Be prepared for a night to never forget!",
+    "bandPic": "band4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Fedora Scores",
+    "genre": "Alternative",
+    "bio": "A mysterious group from Norway, not a lot is known yet but their music will certainly move you.",
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Carline",
+    "genre": "Drama|Film-Noir",
+    "bio": "Open-source local complexity",
+    "bandPic": "https://robohash.org/magnamesteligendi.png?size=150x150&set=set1"
+  },
+  {
+    "id": 7,
+    "name": "Livvy",
+    "genre": "Drama",
+    "bio": "De-engineered solution-oriented capacity",
+    "bandPic": "https://robohash.org/doloremqueaperiamdicta.png?size=150x150&set=set1"
+  },
+  {
+    "id": 8,
+    "name": "Teador",
+    "genre": "Action|Horror|Sci-Fi",
+    "bio": "Integrated directional alliance",
+    "bandPic": "https://robohash.org/commodieosaut.png?size=150x150&set=set1"
+  },
+  {
+    "id": 9,
+    "name": "Aeriel",
+    "genre": "Crime|Drama|Film-Noir|Thriller",
+    "bio": "Diverse systemic complexity",
+    "bandPic": "https://robohash.org/earumfaceresaepe.png?size=150x150&set=set1"
+  },
+  {
+    "id": 10,
+    "name": "Lena",
+    "genre": "Action|Drama|Mystery|Sci-Fi|Thriller|IMAX",
+    "bio": "Open-architected bandwidth-monitored complexity",
+    "bandPic": "https://robohash.org/corruptietquidem.png?size=150x150&set=set1"
+  }
+]

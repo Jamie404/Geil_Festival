@@ -6,82 +6,80 @@
              x:DataType="viewmodel:BandViewModel"
              x:Class="L00150620_Geil_Festival.View.bandsPage"
              Title="Bands / Artists">
-    
-    
-        <Grid ColumnDefinitions="*,*"
-          ColumnSpacing="5"
-          RowDefinitions="*,Auto"
-          RowSpacing="0">
 
-            <CollectionView BackgroundColor="GhostWhite"
-                        Grid.ColumnSpan="2"
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <!--<SearchBar Placeholder="Search through bands.." SearchCommand="{Binding FilterCommand}"/>-->
+
+            <SearchBar x:Name="searchBar"
+                   SearchCommand="{Binding FilterCommand}"
+                   SearchCommandParameter="{Binding Band}"
+                   Placeholder="Filter" />
+
+            <Grid 
+                ColumnDefinitions="Auto,*"
+                RowDefinitions="Auto,*">
+
+                <CollectionView BackgroundColor="Transparent"
                         ItemsSource="{Binding Band}"
                         SelectionMode="None">
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Band">
-                        <Grid Padding="10">
-                            <Frame HeightRequest="125"
-                               Padding="0">
-                                <Grid ColumnDefinitions="*, 2*"
-                                  RowDefinitions="*,*,*,*"
-                                  Padding="0">
-                                    <Label Text="ID"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="0"
-                                       Grid.Column="0"/>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Band">
+                            <Frame 
+                                HeightRequest="150"
+                                Padding="0"
+                                BackgroundColor="#f6f6db">
+                                
+                                <Grid 
+                                    ColumnDefinitions="auto,auto"
+                                    RowDefinitions="26,22,*">
 
-                                    <Label Text="Name"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="1"
-                                       Grid.Column="0"/>
+                                    <ImageButton 
+                                        Source="{Binding bandPic}"
+                                        Margin="5,5,0,0"
+                                        x:Name="ImgBand1"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="3"
+                                        Aspect="AspectFill"
+                                        HeightRequest="150"
+                                        WidthRequest="150" />
 
-                                    <Label Text="Genre"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="2"
-                                       Grid.Column="0"/>
+                                    <Label 
+                                        Text="{Binding name}"
+                                        Margin="10,2,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        FontSize="18"
+                                        FontAttributes="Bold" />
 
-                                    <Label Text="Bio"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="3"
-                                       Grid.Column="0"/>
+                                    <Label 
+                                        Text="{Binding genre}"
+                                        Margin="10,2,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="1"
+                                        FontSize="14"
+                                        FontAttributes="Bold,Italic"/>
 
-                                    <Label Text="{Binding id}"
-                                       Style="{StaticResource SmallLabel}"
-                                       Grid.Row="0"
-                                       Grid.Column="1"/>
-
-                                    <Label Text="{Binding name}"
-                                       Style="{StaticResource SmallLabel}"
-                                       Grid.Row="1"
-                                       Grid.Column="1"/>
-
-                                    <Label Text="{Binding genre}"
-                                       Style="{StaticResource SmallLabel}"
-                                       Grid.Row="2"
-                                       Grid.Column="1"/>
-
-                                    <Label Text="{Binding bio}"
-                                       Style="{StaticResource SmallLabel}"
-                                       Grid.Row="3"
-                                       Grid.Column="1"/>
+                                    <Label 
+                                        MaximumWidthRequest="150"
+                                        LineBreakMode="WordWrap"
+                                        Text="{Binding bio}"
+                                        Margin="10,1,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="2"
+                                        FontSize="11"
+                                        
+                                        />
                                 </Grid>
                             </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-            <!--<Button Text="Get People"
-                Style="{StaticResource ButtonOutline}"
-                Command="{Binding GetBandCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Margin="8"/>
-            <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="Center"
-                           VerticalOptions="CenterAndExpand"
-                           Grid.ColumnSpan="2"
-                           Grid.Row="2"/>-->
-        </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
