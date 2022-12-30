@@ -1,28 +1,22 @@
 ﻿using L00150620_Geil_Festival.Services;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-//using System.Windows.Input;
 
 namespace L00150620_Geil_Festival.ViewModel
 {
-    public class BandViewModel : BaseViewModel
+    public class Day1ViewModel : BaseViewModel
     {
-        BandService _bandService;
+        Day1Service _day1Service;
+        public ObservableCollection<Model.Day1> Day1 { get; } = new();
+        public Command GetDay1Command { get; }
 
-        public ObservableCollection<Model.Band> Band { get; } = new();
-
-        public Command GetBandCommand { get; }
-
-        public BandViewModel(BandService bandService)
+        public Day1ViewModel(Day1Service day1Service)
         {
-
-            _bandService = bandService;
-
-            GetBandCommand = new Command(async () => await GetBandAsync());
-
+            _day1Service = day1Service;
+            GetDay1Command = new Command(async () => await GetDay1Async());
         }
 
-        async Task GetBandAsync()
+        async Task GetDay1Async()
         {
             // If busy, return only
             if (IsBusy)
@@ -30,12 +24,12 @@ namespace L00150620_Geil_Festival.ViewModel
             try
             {
                 IsBusy = true;
-                var bands = await _bandService.GetBandFileAsync();
-                if (bands.Count != 0)
-                    Band.Clear();
+                var gigs = await _day1Service.GetDay1FileAsync();
+                if (gigs.Count != 0)
+                    Day1.Clear();
 
-                foreach (var band in bands)
-                    Band.Add(band);
+                foreach (var gig in gigs)
+                    Day1.Add(gig);
             }
             catch (Exception ex)
             {

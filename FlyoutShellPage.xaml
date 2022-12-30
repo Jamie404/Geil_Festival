@@ -16,6 +16,14 @@
             Shell.TitleColor="GhostWhite"
             Title="L00150620 - Jamie McGee - Géil Music Festival App">
 
+    <!--<Shell.SearchHandler>
+        <controls:AnimalSearchHandler Placeholder="Enter search term"
+                                      ShowsResults="true"
+                                      ItemTemplate="{StaticResource AnimalSearchTemplate}"
+                                      Animals="{x:Static data:MonkeyData.Monkeys}"
+                                      SelectedItemNavigationTarget="{x:Type views:MonkeyDetailPage}" />
+    </Shell.SearchHandler>-->
+
     <Shell.FlyoutHeader>
         <ImageButton Source="logo.jpg"
                        Aspect="AspectFit"

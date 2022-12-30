@@ -22,14 +22,19 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
-        // Register the BandService
+
+        // Register the Services
         builder.Services.AddSingleton<BandService>();
-        // Register the viewModel
+        builder.Services.AddSingleton<Day1Service>();
+
+        // Register the ViewModels
         builder.Services.AddSingleton<BandViewModel>();
-        // Register the MainPage
-        builder.Services.AddTransient<FlyoutShellPage>();
-        // Register the bandsPage
-        builder.Services.AddTransient<bandsPage>();
+        builder.Services.AddSingleton<Day1ViewModel>();
+
+        // Register the View Pages
+        builder.Services.AddSingleton<FlyoutShellPage>();
+        builder.Services.AddSingleton<bandsPage>();
+        builder.Services.AddSingleton<Day1>();
 
         return builder.Build();
     }

@@ -11,18 +11,19 @@
 
         <VerticalStackLayout>
 
-            <!--<SearchBar Placeholder="Search through bands.." SearchCommand="{Binding FilterCommand}"/>-->
+            <SearchBar x:Name="BarSearch" Placeholder="Search through bands.." TextChanged="searchBar_TextChanged"/>
 
-            <SearchBar x:Name="searchBar"
+            <!--<SearchBar x:Name="searchBar"
                    SearchCommand="{Binding FilterCommand}"
-                   SearchCommandParameter="{Binding Band}"
-                   Placeholder="Filter" />
+                   SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+                   Placeholder="Search through bands.." />-->
 
             <Grid 
                 ColumnDefinitions="Auto,*"
                 RowDefinitions="Auto,*">
 
                 <CollectionView BackgroundColor="Transparent"
+                                x:Name="BandView"
                         ItemsSource="{Binding Band}"
                         SelectionMode="None">
 
@@ -71,7 +72,7 @@
                                         Margin="10,1,0,0"
                                         Grid.Column="1"
                                         Grid.Row="2"
-                                        FontSize="11"
+                                        FontSize="12"
                                         
                                         />
                                 </Grid>
