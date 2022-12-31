@@ -21,7 +21,6 @@
                     <DataTemplate x:DataType="model:Day2">
                         <Frame 
                                 HeightRequest="250"
-                                Padding="0"
                                 BackgroundColor="#f6f6db">
 
                             <Grid ColumnDefinitions="Auto,Auto,Auto"

@@ -21,9 +21,11 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Day1">
                         <Frame HeightRequest="250" BackgroundColor="#f6f6db">
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                            </Frame.GestureRecognizers>
+                            
+                            <!--Beginning of details implementation-->
+                            <!--<Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Frame.GestureRecognizers>-->
 
                             <Grid ColumnDefinitions="Auto,Auto,Auto"
                               RowDefinitions="Auto, Auto, Auto, 10">

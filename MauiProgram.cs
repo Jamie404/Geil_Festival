@@ -27,17 +27,20 @@ public static class MauiProgram
         builder.Services.AddSingleton<BandService>();
         builder.Services.AddSingleton<Day1Service>();
         builder.Services.AddSingleton<Day2Service>();
+        builder.Services.AddSingleton<StageService>();
 
         // Register the ViewModels
         builder.Services.AddSingleton<BandViewModel>();
         builder.Services.AddSingleton<Day1ViewModel>();
         builder.Services.AddSingleton<Day2ViewModel>();
+        builder.Services.AddSingleton<StageViewModel>();
 
         // Register the View Pages
         builder.Services.AddSingleton<FlyoutShellPage>();
         builder.Services.AddSingleton<bandsPage>();
         builder.Services.AddSingleton<Day1Page>();
         builder.Services.AddSingleton<Day2Page>();
+        builder.Services.AddSingleton<Stages>();
 
         return builder.Build();
     }

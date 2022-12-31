@@ -1,35 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
+             xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
+             x:DataType="viewmodel:StageViewModel"
              x:Class="L00150620_Geil_Festival.View.Stages"
              Title="Stages">
     <ScrollView>
         <VerticalStackLayout>
 
-            <Image Source="logo.jpg"
-                       Aspect="AspectFill"
-                       HeightRequest="150"
-                       WidthRequest="150" />
+            <Grid 
+                ColumnDefinitions="Auto,*"
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                Margin="0,0,0,5">
 
-            <Image Source="map.png"
-                       Aspect="AspectFill"
-                       HeightRequest="300"
-                       WidthRequest="300" />
+                <CollectionView BackgroundColor="Transparent"
+                                x:Name="BandView"
+                                ItemsSource="{Binding Stage}"
+                                SelectionMode="None">
 
-            <Label 
-                Padding="10,10,10,10"
-                Text="Stages Display Page"
-                FontSize="24"
-                FontAttributes="Bold"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Stages">
+                            <Frame 
+                                HeightRequest="150"
+                                BackgroundColor="#f6f6db">
 
-            <Label 
-                Padding="10,10,10,10"
-                Text="This page will display either a list of stages that are currently existing within the ground, or a potential map that highlights each stage location."
-                FontAttributes="Italic"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                                <Grid 
+                                    ColumnDefinitions="auto,auto"
+                                    RowDefinitions="24,20,*">
+
+                                    <ImageButton 
+                                        Source="{Binding stagephoto}"
+                                        Margin="5,5,0,0"
+                                        x:Name="ImgBand1"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="3"
+                                        Aspect="AspectFill"
+                                        HeightRequest="150"
+                                        WidthRequest="150" />
+
+                                    <Label 
+                                        Text="{Binding stage}"
+                                        Margin="10,0,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        FontSize="18"
+                                        FontAttributes="Bold" />
+
+                                    <Label
+                                        Text ="Latitude   -   Longitude"
+                                        Margin="10,0,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="1"
+                                        FontSize="16"/>
+
+                                    <Label 
+                                        Text="{Binding latitude}"
+                                        Margin="10,0,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="2"
+                                        FontSize="14"/>
+
+                                    <Label 
+                                        MaximumWidthRequest="200"
+                                        LineBreakMode="WordWrap"
+                                        Text="{Binding longitude}"
+                                        Margin="100,0,0,0"
+                                        Grid.Column="1"
+                                        Grid.Row="2"
+                                        FontSize="14"/>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+
+
+
 
         </VerticalStackLayout>
     </ScrollView>

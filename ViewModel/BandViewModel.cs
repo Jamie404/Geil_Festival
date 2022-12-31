@@ -1,7 +1,6 @@
 ﻿using L00150620_Geil_Festival.Services;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-//using System.Windows.Input;
 
 namespace L00150620_Geil_Festival.ViewModel
 {
