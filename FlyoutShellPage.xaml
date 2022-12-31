@@ -43,7 +43,7 @@
         <ShellContent
             Title="Day 2"
             Icon="day22.png"
-            ContentTemplate="{DataTemplate view:Day2}">
+            ContentTemplate="{DataTemplate view:Day2Page}">
         </ShellContent>
 
     </FlyoutItem>

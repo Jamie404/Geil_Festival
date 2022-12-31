@@ -18,14 +18,14 @@
     "id": 3,
     "name": "Three Melons",
     "genre": "Rock",
-    "bio": "The three melons are a local band debuting in the Géil festival. Their signature off-time swing rock will surely get the crowd jamming through the night!",
+    "bio": "The three melons are a local band debuting in the Géil festival. Their signature off-time swing rock will surely get the crowd jamming!",
     "bandPic": "band3.jpg"
   },
   {
     "id": 4,
     "name": "The Book Goobers",
     "genre": "Rock",
-    "bio": "Old timers coming in from the US of A, these gentleman will bring the classics such as the best of ZZ Top and Black Sabbath. Be prepared for a night to never forget!",
+    "bio": "Old timers coming in from the US of A, these gentleman will bring the classics such as the best of ZZ Top and Black Sabbath.",
     "bandPic": "band4.jpg"
   },
   {
@@ -37,37 +37,37 @@
   },
   {
     "id": 6,
-    "name": "Carline",
-    "genre": "Drama|Film-Noir",
-    "bio": "Open-source local complexity",
-    "bandPic": "https://robohash.org/magnamesteligendi.png?size=150x150&set=set1"
+    "name": "Sandy Brioche",
+    "genre": "RnB",
+    "bio": "Sandy comes from the Polynesian islands to send your soul to the ether with his notes. Within the RnB scene, his music is reaching the UK charts.",
+    "bandPic": "band6.jpg"
   },
   {
     "id": 7,
     "name": "Livvy",
-    "genre": "Drama",
-    "bio": "De-engineered solution-oriented capacity",
-    "bandPic": "https://robohash.org/doloremqueaperiamdicta.png?size=150x150&set=set1"
+    "genre": "RnB",
+    "bio": "Setting the stage on fire with memoirs of a troubled soul, Livvy is here to melt the vibes down. Wait until she hits those highs!",
+    "bandPic": "band7.jpg"
   },
   {
     "id": 8,
-    "name": "Teador",
-    "genre": "Action|Horror|Sci-Fi",
-    "bio": "Integrated directional alliance",
-    "bandPic": "https://robohash.org/commodieosaut.png?size=150x150&set=set1"
+    "name": "Thumann",
+    "genre": "Metal",
+    "bio": "A Seattle based djent band, Thumann have come to devastate the stage and have you all in the pit. Get ready to thrash..",
+    "bandPic": "band8.jpg"
   },
   {
     "id": 9,
     "name": "Aeriel",
-    "genre": "Crime|Drama|Film-Noir|Thriller",
-    "bio": "Diverse systemic complexity",
-    "bandPic": "https://robohash.org/earumfaceresaepe.png?size=150x150&set=set1"
+    "genre": "Techno",
+    "bio": "From tech-house to deep house, Aeriel will bring the groove back on the floor. Be ready to dance the night away with solid vibes!",
+    "bandPic": "band9.jpg"
   },
   {
     "id": 10,
-    "name": "Lena",
-    "genre": "Action|Drama|Mystery|Sci-Fi|Thriller|IMAX",
-    "bio": "Open-architected bandwidth-monitored complexity",
-    "bandPic": "https://robohash.org/corruptietquidem.png?size=150x150&set=set1"
+    "name": "Lunar Shreds",
+    "genre": "Metal",
+    "bio": "From the home of Black Metal, this Norwegian group come to snatch souls with their grim riffs and gutteral screams.",
+    "bandPic": "band10.jpg"
   }
 ]

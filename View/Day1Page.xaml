@@ -11,7 +11,7 @@
 
         <VerticalStackLayout>
 
-            <SearchBar x:Name="BarSearch" Placeholder="Search through sets.." TextChanged="searchBar_TextChanged"/>
+            <SearchBar x:Name="BarSearch" Placeholder="Search by name, stage or time.." TextChanged="searchBar_TextChanged"/>
 
             <CollectionView BackgroundColor="Transparent"
                         x:Name="Day1View"
@@ -86,7 +86,6 @@
 
                             </Grid>
                         </Frame>
-
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

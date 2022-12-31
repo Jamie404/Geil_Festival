@@ -26,15 +26,18 @@ public static class MauiProgram
         // Register the Services
         builder.Services.AddSingleton<BandService>();
         builder.Services.AddSingleton<Day1Service>();
+        builder.Services.AddSingleton<Day2Service>();
 
         // Register the ViewModels
         builder.Services.AddSingleton<BandViewModel>();
         builder.Services.AddSingleton<Day1ViewModel>();
+        builder.Services.AddSingleton<Day2ViewModel>();
 
         // Register the View Pages
         builder.Services.AddSingleton<FlyoutShellPage>();
         builder.Services.AddSingleton<bandsPage>();
         builder.Services.AddSingleton<Day1Page>();
+        builder.Services.AddSingleton<Day2Page>();
 
         return builder.Build();
     }

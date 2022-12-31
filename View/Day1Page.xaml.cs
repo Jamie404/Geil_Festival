@@ -21,7 +21,7 @@ public partial class Day1Page : ContentPage
     {
         string searchTerm = BarSearch.Text.ToLower();
 
-        var searchQuery = ViewModel.Day1.Where(s => s.bandName.ToLower().Contains(searchTerm));
+        var searchQuery = ViewModel.Day1.Where(s => s.bandName.ToLower().Contains(searchTerm) || s.stage.Contains(searchTerm) || s.time.Contains(searchTerm));
         filteredList.Clear();
 
         foreach (Day1 b in searchQuery)
