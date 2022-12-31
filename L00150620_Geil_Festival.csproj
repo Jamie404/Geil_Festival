@@ -68,6 +68,9 @@
 	  <Compile Update="View\Day2Page.xaml.cs">
 	    <DependentUpon>Day2Page.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,7 +92,7 @@
 	  <MauiXaml Update="View\Day2Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\Home.xaml">
+	  <MauiXaml Update="View\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Scheduler.xaml">

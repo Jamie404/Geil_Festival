@@ -1,55 +1,115 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
-             xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
-             x:DataType="viewmodel:BandViewModel"
              x:Class="L00150620_Geil_Festival.View.HomePage"
-             Title="HomePage">
-    <Grid ColumnDefinitions="*,*"
-          ColumnSpacing="5"
-          RowDefinitions="*,Auto"
-          RowSpacing="0">
-        <SearchBar/>
-        <CollectionView BackgroundColor="Transparent"
-                        Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Band}"
-                        SelectionMode="None">
+             Title="Welcome to Géil Music Fest">
+    
+    <ScrollView>
+        <VerticalStackLayout>
 
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Band">
-                    <Grid Padding="10">
-                        <Frame HeightRequest="125"
-                               Padding="0">
-                            <Grid ColumnDefinitions="*, 2*"
-                                  RowDefinitions="*,*,*,*"
-                                  Padding="0">
-                                <Label Text="ID"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="0"
-                                       Grid.Column="0"/>
+            <Image 
+                Source="logo.jpg"
+                Aspect="AspectFill"
+                HeightRequest="150"
+                WidthRequest="150" />
 
-                                <Label Text="Name"
-                                       Style="{StaticResource LargeLabel}"
-                                       Grid.Row="1"
-                                       Grid.Column="0"/>
-                            </Grid>
-                        </Frame>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button Text="Get People"
-                Style="{StaticResource ButtonOutline}"
-                Command="{Binding GetBandCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Margin="8"/>
-        <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="Center"
-                           VerticalOptions="CenterAndExpand"
-                           Grid.ColumnSpan="2"
-                           Grid.Row="2"/>
-    </Grid>
+            <Label 
+                Padding="10,10,10,10"
+                Text="Welcome to the Géil Music Festival app!"
+                FontSize="24"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                LineBreakMode="WordWrap"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Below is a run down of the festival itinerary for the music festival including bands, stages, sponsors and available vendors. We hope you enjoy your time with us, and be sure to check out each page on our app for more information!"
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Bands"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <ImageButton 
+                Source="bandshome.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="300" 
+                Clicked="ImageButton_Clicked"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Click the image above to view information about each band and artist coming to the Géil festival! We have a varied line up of talent coming to you from around the world to entertain you. The line-ups for each day can be found via the menu on the side."
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Scheduler"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <ImageButton 
+                Source="schedulehome.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="300" 
+                Clicked="ImageButton_Clicked1"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="The above image will grant access to your own personal schedule and track which artist you wish to attend over the festival days. Be sure to save your favourites to know when and where they will be found!"
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Stages"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <ImageButton 
+                Source="stagehome.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="300" 
+                Clicked="ImageButton_Clicked2"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Tap the image to be transported to the various stages located within our festival encampment. Ensure you won't get lost looking for your friends while you enjoy the festivities."
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="© 2022 - L00150620"
+                FontSize="10"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

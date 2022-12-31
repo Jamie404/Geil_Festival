@@ -31,4 +31,22 @@ public partial class Day1Page : ContentPage
 
         Day1View.ItemsSource = filteredList;
     }
+
+    private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+    {
+        //Attempting to open to details page for a set and work towards Geolocation data
+
+
+       var band = ((VisualElement)sender).BindingContext as Day1;
+
+        if (band != null)
+        {
+            return;
+        }
+
+        await Shell.Current.GoToAsync(nameof(bandsPage), true, new Dictionary<string, object>
+        {
+            { "Band", band }
+        });
+    }
 }
