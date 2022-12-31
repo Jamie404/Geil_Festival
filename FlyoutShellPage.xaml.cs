@@ -13,7 +13,5 @@ public partial class FlyoutShellPage : Shell
     public FlyoutShellPage()
 	{
 		InitializeComponent();
-        // To be used in second prototype iteration
-        //BindingContext = viewModel;
     }
 }

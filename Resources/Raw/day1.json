@@ -1,10 +1,102 @@
-[{"id":1,"bandName":"Koren","stage":"Lindley","time":"9:14","latitude":24.546876,"longitude":107.04219,"saved":false},
-{"id":2,"bandName":"Jacquenetta","stage":"Milmo","time":"11:04","latitude":3.799339,"longitude":-75.194595,"saved":true},
-{"id":3,"bandName":"Anastasia","stage":"Skippon","time":"16:28","latitude":39.983599,"longitude":98.90327,"saved":false},
-{"id":4,"bandName":"Jaymie","stage":"Grzegorek","time":"15:28","latitude":15.2958539,"longitude":103.2940689,"saved":true},
-{"id":5,"bandName":"Filbert","stage":"McNelis","time":"20:57","latitude":8.3487476,"longitude":-80.5924449,"saved":true},
-{"id":6,"bandName":"Adrian","stage":"Curee","time":"15:21","latitude":54.1440921,"longitude":26.2103909,"saved":false},
-{"id":7,"bandName":"Myrtice","stage":"Maskill","time":"22:09","latitude":-6.3212658,"longitude":106.0996648,"saved":true},
-{"id":8,"bandName":"Chandal","stage":"Killingback","time":"21:00","latitude":-8.5320128,"longitude":122.904318,"saved":true},
-{"id":9,"bandName":"Jarrid","stage":"Bilson","time":"18:31","latitude":6.9097671,"longitude":0.6298922,"saved":true},
-{"id":10,"bandName":"Jimmie","stage":"Godrich","time":"19:29","latitude":42.1088311,"longitude":21.553379,"saved":true}]
+[
+  {
+    "id": 1,
+    "bandName": "Scratchy Fx",
+    "stage": "1",
+    "time": "9:14",
+    "latitude": 24.546876,
+    "longitude": 107.04219,
+    "saved": false,
+    "bandPic": "band1.jpg"
+  },
+  {
+    "id": 2,
+    "bandName": "Jacquenetta",
+    "stage": "Milmo",
+    "time": "11:04",
+    "latitude": 3.799339,
+    "longitude": -75.194595,
+    "saved": true,
+    "bandPic": "band2.jpg"
+  },
+  {
+    "id": 3,
+    "bandName": "Anastasia",
+    "stage": "Skippon",
+    "time": "16:28",
+    "latitude": 39.983599,
+    "longitude": 98.90327,
+    "saved": false,
+    "bandPic": "band3.jpg"
+  },
+  {
+    "id": 4,
+    "bandName": "Jaymie",
+    "stage": "Grzegorek",
+    "time": "15:28",
+    "latitude": 15.2958539,
+    "longitude": 103.2940689,
+    "saved": true,
+    "bandPic": "band4.jpg"
+  },
+  {
+    "id": 5,
+    "bandName": "Filbert",
+    "stage": "McNelis",
+    "time": "20:57",
+    "latitude": 8.3487476,
+    "longitude": -80.5924449,
+    "saved": true,
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 6,
+    "bandName": "Adrian",
+    "stage": "Curee",
+    "time": "15:21",
+    "latitude": 54.1440921,
+    "longitude": 26.2103909,
+    "saved": false,
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 7,
+    "bandName": "Myrtice",
+    "stage": "Maskill",
+    "time": "22:09",
+    "latitude": -6.3212658,
+    "longitude": 106.0996648,
+    "saved": true,
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 8,
+    "bandName": "Chandal",
+    "stage": "Killingback",
+    "time": "21:00",
+    "latitude": -8.5320128,
+    "longitude": 122.904318,
+    "saved": true,
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 9,
+    "bandName": "Jarrid",
+    "stage": "Bilson",
+    "time": "18:31",
+    "latitude": 6.9097671,
+    "longitude": 0.6298922,
+    "saved": true,
+    "bandPic": "band5.jpg"
+  },
+  {
+    "id": 10,
+    "bandName": "Jimmie",
+    "stage": "Godrich",
+    "time": "19:29",
+    "latitude": 42.1088311,
+    "longitude": 21.553379,
+    "saved": true,
+    "bandPic": "band5.jpg"
+  }
+]

@@ -15,5 +15,19 @@ namespace L00150620_Geil_Festival.Model
         public double latitude { get; set; }
         public double longitude { get; set; }
         public bool saved { get; set; }
+        public string bandPic { get; set; }
+
+        //public Day1(int ID, string BandName, string Stage, string Time, 
+        //    double Latitude, double Longitude, bool Saved, string BandPic)
+        //{
+        //    ID = id;
+        //    BandName = bandName;
+        //    Stage = stage;
+        //    Time = time;
+        //    Latitude = latitude;
+        //    Longitude = longitude;
+        //    Saved = saved;
+        //    BandPic = bandPic;
+        //}
     }
 }

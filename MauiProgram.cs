@@ -34,7 +34,7 @@ public static class MauiProgram
         // Register the View Pages
         builder.Services.AddSingleton<FlyoutShellPage>();
         builder.Services.AddSingleton<bandsPage>();
-        builder.Services.AddSingleton<Day1>();
+        builder.Services.AddSingleton<Day1Page>();
 
         return builder.Build();
     }

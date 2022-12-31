@@ -1,7 +1,6 @@
 using L00150620_Geil_Festival.Model;
 using L00150620_Geil_Festival.ViewModel;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 
 namespace L00150620_Geil_Festival.View;
 
@@ -33,7 +32,5 @@ public partial class bandsPage : ContentPage
         }
 
         BandView.ItemsSource = filteredList;
-        Debug.WriteLine(searchQuery);
-        Debug.WriteLine(searchTerm);
     }
 }

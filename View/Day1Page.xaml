@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
+             xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
+             x:DataType="viewmodel:Day1ViewModel"
+             x:Class="L00150620_Geil_Festival.View.Day1Page"
+             Title="Line-up Events">
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+            <SearchBar x:Name="BarSearch" Placeholder="Search through sets.." TextChanged="searchBar_TextChanged"/>
+
+            <CollectionView BackgroundColor="Transparent"
+                        x:Name="Day1View"
+                        ItemsSource="{Binding Day1}"
+                        SelectionMode="None">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Day1">
+                        <Frame 
+                                HeightRequest="250"
+                                Padding="0"
+                                BackgroundColor="#f6f6db">
+
+                            <Grid ColumnDefinitions="Auto,Auto,Auto"
+                              RowDefinitions="Auto, Auto, Auto, 10">
+
+                                <ImageButton Source="{Binding bandPic}"
+                       x:Name="ImgBand1"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="4"
+                       Aspect="AspectFill"
+                       HeightRequest="150"
+                       WidthRequest="150" />
+
+                                <Label Text="{Binding bandName}"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Margin="10,10,0,0"
+                       FontSize="16"
+                       FontAttributes="Bold" />
+
+                                <Label Text="Stage: "
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Margin="10,0,0,0"
+                       FontSize="14"
+                       FontAttributes="Bold" />
+
+                                <Label Text="{Binding stage}"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Margin="10,1,0,0"
+                       FontSize="14" />
+
+                                <Label Text="Time: "
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       Margin="10,0,0,0"
+                       FontSize="14"
+                       FontAttributes="Bold" />
+
+                                <Label Text="{Binding time}"
+                       Grid.Row="2"
+                       Grid.Column="2"
+                       Margin="10,0,0,0"
+                       FontSize="14" />
+
+                                <Label Text="Save: "
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       Margin="10,-32,0,0"
+                       FontSize="13"
+                       FontAttributes="Bold" />
+
+                                <CheckBox
+                                    HorizontalOptions="End"
+                                    Margin="0,20,0,0"
+                                    Color="#caad7e"
+                                    Grid.Row="2"
+                                    Grid.Column="3"/>
+
+                            </Grid>
+                        </Frame>
+
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
