@@ -1,34 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
+             xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
+             x:DataType="viewmodel:SponsorsViewModel"
              x:Class="L00150620_Geil_Festival.View.Sponsors"
              Title="Sponsors">
+    
     <ScrollView>
         <VerticalStackLayout>
 
-            <Image Source="logo.jpg"
-                       Aspect="AspectFill"
-                       HeightRequest="150"
-                       WidthRequest="150" />
+            <Grid HorizontalOptions="Center">
+                <CollectionView BackgroundColor="Transparent"
+                                x:Name="BandView"
+                                ItemsSource="{Binding Sponsors}"
+                                SelectionMode="None">
 
-            <Image Source="sponsors.png"
-                       HeightRequest="300"
-                       WidthRequest="300" />
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Sponsors">
+                            <Frame BackgroundColor="#f6f6db">
+                                <Grid
+                                    ColumnDefinitions="200"
+                                    RowDefinitions="Auto, Auto, Auto, Auto">
 
-            <Label 
-                Padding="10,10,10,10"
-                Text="Sponsors Page for the Event"
-                FontSize="24"
-                FontAttributes="Bold"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                                    <Image 
+                                        Source="{Binding sponsorPic}"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        Aspect="AspectFit"
+                                        HeightRequest="150"
+                                        WidthRequest="150"
+                                        Margin="0,5,0,5"/>
 
-            <Label 
-                Padding="10,10,10,10"
-                Text="This is where the sponsors that are backing the Géil Music Festival event will be on display for the user to sift through."
-                FontAttributes="Italic"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+                                    <Label 
+                                        Text="{Binding name}"
+                                        Grid.Column="0"
+                                        Grid.Row="1"
+                                        FontSize="18"
+                                        Margin="0,5,0,5"
+                                        FontAttributes="Bold"/>
+
+                                    <Label 
+                                        Text="{Binding slogan}"
+                                        Grid.Column="0"
+                                        Grid.Row="2"
+                                        FontSize="14"
+                                        Margin="0,5,0,5"
+                                        FontAttributes="Italic"/>
+
+                                    <Label 
+                                        Text="{Binding about}"
+                                        Grid.Column="0"
+                                        Grid.Row="3"
+                                        FontSize="11"
+                                        Margin="0,5,0,5"
+                                        LineBreakMode="WordWrap"/>
+
+                                    <Line 
+                                        Margin="0,-5,0,5" 
+                                        X1="0" 
+                                        X2="200" 
+                                        HorizontalOptions="Center" 
+                                        Stroke="black" 
+                                        StrokeDashArray="1,1" 
+                                        StrokeDashOffset="6"
+                                        Grid.Column="0"
+                                        Grid.Row="3"/>
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
 
         </VerticalStackLayout>
     </ScrollView>

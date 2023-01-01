@@ -6,14 +6,11 @@
              x:DataType="viewmodel:StageViewModel"
              x:Class="L00150620_Geil_Festival.View.Stages"
              Title="Stages">
+
     <ScrollView>
         <VerticalStackLayout>
 
-            <Grid 
-                ColumnDefinitions="Auto,*"
-                RowDefinitions="Auto,Auto,Auto,Auto"
-                Margin="0,0,0,5">
-
+            <Grid HorizontalOptions="Center">
                 <CollectionView BackgroundColor="Transparent"
                                 x:Name="BandView"
                                 ItemsSource="{Binding Stage}"
@@ -21,65 +18,74 @@
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:Stages">
-                            <Frame 
-                                HeightRequest="150"
-                                BackgroundColor="#f6f6db">
+                            <Frame BackgroundColor="#f6f6db">
+                                <Grid
+                                    ColumnDefinitions="200"
+                                    RowDefinitions="Auto, Auto, Auto, Auto, Auto">
 
-                                <Grid 
-                                    ColumnDefinitions="auto,auto"
-                                    RowDefinitions="24,20,*">
-
-                                    <ImageButton 
+                                    <Image 
                                         Source="{Binding stagephoto}"
-                                        Margin="5,5,0,0"
-                                        x:Name="ImgBand1"
                                         Grid.Column="0"
                                         Grid.Row="0"
-                                        Grid.RowSpan="3"
-                                        Aspect="AspectFill"
+                                        Aspect="AspectFit"
                                         HeightRequest="150"
-                                        WidthRequest="150" />
+                                        WidthRequest="150"
+                                        Margin="0,5,0,5"/>
 
                                     <Label 
                                         Text="{Binding stage}"
-                                        Margin="10,0,0,0"
-                                        Grid.Column="1"
-                                        Grid.Row="0"
-                                        FontSize="18"
-                                        FontAttributes="Bold" />
-
-                                    <Label
-                                        Text ="Latitude   -   Longitude"
-                                        Margin="10,0,0,0"
-                                        Grid.Column="1"
+                                        Grid.Column="0"
                                         Grid.Row="1"
-                                        FontSize="16"/>
+                                        FontSize="18"
+                                        Margin="0,5,0,5"
+                                        FontAttributes="Bold"
+                                        HorizontalOptions="Center"/>
+
+                                    <Label 
+                                        Text="Latitude:"
+                                        Grid.Column="0"
+                                        Grid.Row="2"
+                                        FontSize="11"
+                                        Margin="5,5,0,5"/>
 
                                     <Label 
                                         Text="{Binding latitude}"
-                                        Margin="10,0,0,0"
-                                        Grid.Column="1"
+                                        Grid.Column="0"
                                         Grid.Row="2"
-                                        FontSize="14"/>
+                                        FontSize="11"
+                                        Margin="55,5,0,5"/>
 
                                     <Label 
-                                        MaximumWidthRequest="200"
-                                        LineBreakMode="WordWrap"
+                                        Text="Latitude:"
+                                        Grid.Column="0"
+                                        Grid.Row="3"
+                                        FontSize="11"
+                                        Margin="5,5,0,5"/>
+
+                                    <Label 
                                         Text="{Binding longitude}"
-                                        Margin="100,0,0,0"
-                                        Grid.Column="1"
-                                        Grid.Row="2"
-                                        FontSize="14"/>
+                                        Grid.Column="0"
+                                        Grid.Row="3"
+                                        FontSize="11"
+                                        Margin="55,5,0,10"/>
+
+                                        <Line 
+                                        Margin="0,-5,0,5" 
+                                        X1="0" 
+                                        X2="200" 
+                                        HorizontalOptions="Center" 
+                                        Stroke="black" 
+                                        StrokeDashArray="1,1" 
+                                        StrokeDashOffset="6"
+                                        Grid.Column="0"
+                                        Grid.Row="4"/>
+
                                 </Grid>
                             </Frame>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Grid>
-
-
-
-
 
         </VerticalStackLayout>
     </ScrollView>

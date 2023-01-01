@@ -28,12 +28,16 @@ public static class MauiProgram
         builder.Services.AddSingleton<Day1Service>();
         builder.Services.AddSingleton<Day2Service>();
         builder.Services.AddSingleton<StageService>();
+        builder.Services.AddSingleton<SponsorService>();
+        builder.Services.AddSingleton<VendorService>();
 
         // Register the ViewModels
         builder.Services.AddSingleton<BandViewModel>();
         builder.Services.AddSingleton<Day1ViewModel>();
         builder.Services.AddSingleton<Day2ViewModel>();
         builder.Services.AddSingleton<StageViewModel>();
+        builder.Services.AddSingleton<SponsorsViewModel>();
+        builder.Services.AddSingleton<VendorsViewModel>();
 
         // Register the View Pages
         builder.Services.AddSingleton<FlyoutShellPage>();
@@ -41,6 +45,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<Day1Page>();
         builder.Services.AddSingleton<Day2Page>();
         builder.Services.AddSingleton<Stages>();
+        builder.Services.AddSingleton<Sponsors>();
+        builder.Services.AddSingleton<Vendors>();
 
         return builder.Build();
     }

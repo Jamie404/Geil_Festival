@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Bepsi",
+    "about": "Being the main proprietor of stalls for the incoming vendors to the festival grounds, Bepsi is a titan of the industry. Always keen to support local festivities with their reach of suppliers and vendors.",
+    "slogan": "Is Bepsi okay?",
+    "sponsorPic": "bepsi.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Snek Solutions",
+    "about": "A new sponsor to the Irish arts fold, Snek Solutions are providing any and all security solutions required. Between monitoring staff, to facial recognition devices on the stage grounds.",
+    "slogan": "Don't step here!'",
+    "sponsorPic": "snek.png"
+  },
+  {
+    "id": 3,
+    "name": "Weyland-Yutani",
+    "about": "When not competing with the big industry moguls globally, Weyland-Yutani invest in promoting varying cultures in the focus to create a wordlwide unity.",
+    "slogan": "Building Better Worlds",
+    "sponsorPic": "weyland.png"
+  },
+  {
+    "id": 4,
+    "name": "E-Corp",
+    "about": "E-Corp are here to provide all the necessary technology for the musical festival which includes all IoT devices, audio equipment, and networking solutions.. what a great organisation!",
+    "slogan": "We change the World!",
+    "sponsorPic": "ecorp.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cyberdyne Systems",
+    "about": "Well done, you've found an easter egg within the code!.. Now ignore the festival goers that do not require sustenance and enjoy your time here..'",
+    "slogan": "Skynet is your friend!..",
+    "sponsorPic": "cyberdyne.jpg"
+  }
+]

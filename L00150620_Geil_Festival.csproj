@@ -52,6 +52,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\schedule.png" />
 	  <None Remove="Resources\Raw\day2.json" />
+	  <None Remove="Resources\Raw\sponsors.json" />
+	  <None Remove="Resources\Raw\vendors.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,6 +76,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Update="Resources\Raw\vendors.json">
+	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+	  </MauiAsset>
+	  <MauiAsset Update="Resources\Raw\sponsors.json">
+	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+	  </MauiAsset>
 	  <MauiAsset Update="Resources\Raw\day2.json">
 	    <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
 	  </MauiAsset>

@@ -24,7 +24,7 @@
 
             <Label 
                 Padding="10,10,10,10"
-                Text="Below is a run down of the festival itinerary for the music festival including bands, stages, sponsors and available vendors. We hope you enjoy your time with us, and be sure to check out each page on our app for more information!"
+                Text="Below is an interactive list of the festival itinerary for the music festival including bands, stages, and personal scheduler. We hope you enjoy your time with us, and be sure to check out each page in the flyout menu for more information!"
                 FontAttributes="Italic"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />

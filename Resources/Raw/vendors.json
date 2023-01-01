@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Bepsi",
+    "about": "Being the main proprietor of stalls for the incoming vendors to the festival grounds, Bepsi is a titan of the industry. Always keen to support local festivities with their reach of suppliers and vendors.",
+    "slogan": "Is Bepsi okay?",
+    "vendorPic": "bepsi.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Veggie Love",
+    "about": "Here to serve all of your vegetarian and vegan needs! Veggie Love will have mutiple stalls across the festival grounds to provide meals and snacks for all attendees.",
+    "slogan": "Love of all things grown naturally!",
+    "vendorPic": "veggielove.png"
+  },
+  {
+    "id": 3,
+    "name": "Tasty Food",
+    "about": "Tasty Food acts as a generic chain supplier globally to provide all manner of snacks and ease made meals. They are currently in partnership alongside Bepsi to provide for the music festival.",
+    "slogan": "Mmnn.. So Tasty!!",
+    "vendorPic": "tastyfood.jpg"
+  },
+  {
+    "id": 4,
+    "name": "La Plonk",
+    "about": "An alcholic beverage vendor with a startling array of choices from craft beers to your favourite local pint. La Plonk will be situated all across the grounds to provide your pick of poison in a plastic cup.",
+    "slogan": "It all goes plonk!",
+    "vendorPic": "winery.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cat Beans",
+    "about": "A new family based vendor with a large affection with the felyne companion. Each stall will be operating throughout the day and night to meet the attendees caffeine and other hot beverage needs.",
+    "slogan": "Coffee brewed with purrfect detail!",
+    "vendorPic": "catcoffee.jpg"
+  }
+]
