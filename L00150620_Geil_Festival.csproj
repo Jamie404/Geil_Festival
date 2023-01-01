@@ -64,6 +64,9 @@
 	  <Compile Update="View\bandsPage.xaml.cs">
 	    <DependentUpon>bandsPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\Day1Schedule.xaml.cs">
+	    <DependentUpon>Day1Schedule.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\Day1Page.xaml.cs">
 	    <DependentUpon>Day1Page.xaml</DependentUpon>
 	  </Compile>
@@ -92,6 +95,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\bandsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Day1Schedule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Day1Page.xaml">

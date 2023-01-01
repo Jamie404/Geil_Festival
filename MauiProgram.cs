@@ -26,6 +26,7 @@ public static class MauiProgram
         // Register the Services
         builder.Services.AddSingleton<BandService>();
         builder.Services.AddSingleton<Day1Service>();
+        builder.Services.AddSingleton<Day1ScheduleService>();
         builder.Services.AddSingleton<Day2Service>();
         builder.Services.AddSingleton<StageService>();
         builder.Services.AddSingleton<SponsorService>();
@@ -34,6 +35,7 @@ public static class MauiProgram
         // Register the ViewModels
         builder.Services.AddSingleton<BandViewModel>();
         builder.Services.AddSingleton<Day1ViewModel>();
+        builder.Services.AddSingleton<Day1ScheduleViewModel>();
         builder.Services.AddSingleton<Day2ViewModel>();
         builder.Services.AddSingleton<StageViewModel>();
         builder.Services.AddSingleton<SponsorsViewModel>();
@@ -43,6 +45,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<FlyoutShellPage>();
         builder.Services.AddSingleton<bandsPage>();
         builder.Services.AddSingleton<Day1Page>();
+        builder.Services.AddSingleton<Day1Schedule>();
         builder.Services.AddSingleton<Day2Page>();
         builder.Services.AddSingleton<Stages>();
         builder.Services.AddSingleton<Sponsors>();

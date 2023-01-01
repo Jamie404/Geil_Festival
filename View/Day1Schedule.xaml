@@ -3,38 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
              xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
-             x:DataType="viewmodel:Day1ViewModel"
-             x:Class="L00150620_Geil_Festival.View.Day1Page"
-             Title="Line-up Events">
+             x:DataType="viewmodel:Day1ScheduleViewModel"
+             x:Class="L00150620_Geil_Festival.View.Day1Schedule"
+             Title="Scheduler">
 
     <ScrollView>
 
         <VerticalStackLayout>
 
-            <SearchBar x:Name="BarSearch" Placeholder="Search by name, stage or time.." TextChanged="searchBar_TextChanged"/>
+            <!--<SearchBar x:Name="BarSearch" Placeholder="Search by name, stage or time.." TextChanged="searchBar_TextChanged"/>-->
 
-            <!--Grid ColumnDefinitions="auto, auto" RowDefinitions="Auto">
+            <Grid ColumnDefinitions="auto, auto" RowDefinitions="Auto">
                 <Label 
+                    x:Name="checkLabel"
                     Margin="5,3,0,0"
                     Text="Click here: "/>
                 <CheckBox 
+                    x:Name="checkBox1"
                     Margin="0,-2,0,0"
                     Grid.Column="1"
                     CheckedChanged="CheckBox_CheckedChanged"/>
-            </Grid>-->
-            
+            </Grid>
 
             <CollectionView BackgroundColor="Transparent"
                         x:Name="Day1View"
-                        ItemsSource="{Binding Day1}"
+                        ItemsSource="{Binding Day1Schedule}"
                         SelectionMode="None">
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Day1">
                         <Frame HeightRequest="250" BackgroundColor="#f6f6db">
 
-                            <Grid ColumnDefinitions="Auto,Auto,Auto"
-                              RowDefinitions="Auto, Auto, Auto, 10">
+                            <Grid
+                                ColumnDefinitions="Auto,Auto,Auto"
+                                RowDefinitions="Auto, Auto, Auto, 10">
 
                                 <ImageButton Source="{Binding bandPic}"
                        x:Name="ImgBand1"
