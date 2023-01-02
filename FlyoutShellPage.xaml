@@ -61,16 +61,10 @@
         <ShellContent
             Title="Day 2"
             Icon="day22.png"
-            ContentTemplate="{DataTemplate view:Day2Page}">
+            ContentTemplate="{DataTemplate view:Day2Schedule}">
         </ShellContent>
 
     </FlyoutItem>
-
-    <!--<ShellContent
-            Title="Scheduler"
-            Icon="schedule.png"
-            ContentTemplate="{DataTemplate view:Scheduler}">
-    </ShellContent>-->
 
     <ShellContent
             Title="Bands"

@@ -28,6 +28,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<Day1Service>();
         builder.Services.AddSingleton<Day1ScheduleService>();
         builder.Services.AddSingleton<Day2Service>();
+        builder.Services.AddSingleton<Day2ScheduleService>();
         builder.Services.AddSingleton<StageService>();
         builder.Services.AddSingleton<SponsorService>();
         builder.Services.AddSingleton<VendorService>();
@@ -37,6 +38,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<Day1ViewModel>();
         builder.Services.AddSingleton<Day1ScheduleViewModel>();
         builder.Services.AddSingleton<Day2ViewModel>();
+        builder.Services.AddSingleton<Day2ScheduleViewModel>();
         builder.Services.AddSingleton<StageViewModel>();
         builder.Services.AddSingleton<SponsorsViewModel>();
         builder.Services.AddSingleton<VendorsViewModel>();
@@ -47,6 +49,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<Day1Page>();
         builder.Services.AddSingleton<Day1Schedule>();
         builder.Services.AddSingleton<Day2Page>();
+        builder.Services.AddSingleton<Day2Schedule>();
         builder.Services.AddSingleton<Stages>();
         builder.Services.AddSingleton<Sponsors>();
         builder.Services.AddSingleton<Vendors>();

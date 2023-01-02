@@ -1,6 +1,6 @@
 ﻿namespace L00150620_Geil_Festival.Model
 {
-    public class Day1Sched
+    public class Day2Sched
     {
         public int id { get; set; }
         public string bandName { get; set; }

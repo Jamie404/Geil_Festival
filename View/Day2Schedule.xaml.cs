@@ -5,19 +5,19 @@ using System.Diagnostics;
 
 namespace L00150620_Geil_Festival.View;
 
-public partial class Day1Schedule : ContentPage
+public partial class Day2Schedule : ContentPage
 {
-    private Day1ScheduleViewModel ViewModel { get; set; }
-    private ObservableCollection<Day1Sched> filteredList = new ObservableCollection<Day1Sched>();
+    private Day2ScheduleViewModel ViewModel { get; set; }
+    private ObservableCollection<Day2Sched> filteredList = new ObservableCollection<Day2Sched>();
 
-    private Day1ScheduleViewModel ViewModel2 { get; set; }
-    private ObservableCollection<Day1Sched> testList = new ObservableCollection<Day1Sched>();
+    private Day2ScheduleViewModel ViewModel2 { get; set; }
+    private ObservableCollection<Day2Sched> testList = new ObservableCollection<Day2Sched>();
 
-    public Day1Schedule(Day1ScheduleViewModel viewModel)
+    public Day2Schedule(Day2ScheduleViewModel viewModel)
     {
         InitializeComponent();
         BindingContext = viewModel;
-        viewModel.GetDay1ScheduleCommand.Execute(viewModel);
+        viewModel.GetDay2ScheduleCommand.Execute(viewModel);
 
         Day1View.IsVisible = false;
 
@@ -29,10 +29,10 @@ public partial class Day1Schedule : ContentPage
     {
         try
         {
-            var searchQuery = ViewModel2.Day1Schedule.Where(s => s.saved.Equals(true));
+            var searchQuery = ViewModel2.Day2Schedule.Where(s => s.saved.Equals(true));
             testList.Clear();
 
-            foreach (Day1Sched b in searchQuery)
+            foreach (Day2Sched b in searchQuery)
             {
                 testList.Add(b);
             }

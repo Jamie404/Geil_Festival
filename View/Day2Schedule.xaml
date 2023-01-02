@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:L00150620_Geil_Festival.Model"
              xmlns:viewmodel="clr-namespace:L00150620_Geil_Festival.ViewModel"
-             x:DataType="viewmodel:Day1ScheduleViewModel"
-             x:Class="L00150620_Geil_Festival.View.Day1Schedule"
+             x:DataType="viewmodel:Day2ScheduleViewModel"
+             x:Class="L00150620_Geil_Festival.View.Day2Schedule"
              Title="Scheduler">
 
     <ScrollView>
@@ -25,7 +25,7 @@
 
             <CollectionView BackgroundColor="Transparent"
                         x:Name="Day1View"
-                        ItemsSource="{Binding Day1Schedule}"
+                        ItemsSource="{Binding Day2Schedule}"
                         SelectionMode="None">
 
                 <CollectionView.ItemTemplate>
