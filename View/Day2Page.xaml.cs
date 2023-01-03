@@ -51,13 +51,12 @@ public partial class Day2Page : ContentPage
 
 
 
-        // ***IMPORTANT - Comment out Android if running on Windows
+        // ***IMPORTANT - Comment out Android code if running on Windows OS
 
         // FOR ANDROID - Writes to Virtual SD card application documents directory
         // REQUIRES VIRTUAL SD CARD CONFIGURATION ON EMULATOR
-        // Locates App documents files directory
+
         var docsDirectory = Android.App.Application.Context.GetExternalFilesDir(Android.OS.Environment.DirectoryDocuments);
-        // Saves to SD card
         File.WriteAllText($"{docsDirectory.AbsoluteFile.Path}/test2.json", jsonString);
 
 
