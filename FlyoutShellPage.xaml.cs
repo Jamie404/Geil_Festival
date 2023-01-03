@@ -16,7 +16,7 @@ public partial class FlyoutShellPage : Shell
 
         // Creates routes for home page image on click functions to navigate to appropriate page
         Routing.RegisterRoute(nameof(bandsPage), typeof(bandsPage));
-        Routing.RegisterRoute(nameof(Scheduler), typeof(Scheduler));
         Routing.RegisterRoute(nameof(Stages), typeof(Stages));
+        Routing.RegisterRoute(nameof(Vendors), typeof(Vendors));
     }
 }

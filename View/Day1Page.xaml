@@ -13,17 +13,6 @@
 
             <SearchBar x:Name="BarSearch" Placeholder="Search by name, stage or time.." TextChanged="searchBar_TextChanged"/>
 
-            <!--Grid ColumnDefinitions="auto, auto" RowDefinitions="Auto">
-                <Label 
-                    Margin="5,3,0,0"
-                    Text="Click here: "/>
-                <CheckBox 
-                    Margin="0,-2,0,0"
-                    Grid.Column="1"
-                    CheckedChanged="CheckBox_CheckedChanged"/>
-            </Grid>-->
-            
-
             <CollectionView BackgroundColor="Transparent"
                         x:Name="Day1View"
                         ItemsSource="{Binding Day1}"
@@ -87,6 +76,7 @@
 
                                 <CheckBox
                                     IsChecked="{Binding saved}"
+                                    CheckedChanged="CheckBox_CheckedChanged"
                                     HorizontalOptions="End"
                                     Margin="0,20,0,0"
                                     Color="#caad7e"

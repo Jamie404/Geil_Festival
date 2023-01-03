@@ -13,7 +13,7 @@ public partial class HomePage : ContentPage
 
     private async void ImageButton_Clicked1(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(Scheduler));
+        await Shell.Current.GoToAsync(nameof(Vendors));
 
     }
     private async void ImageButton_Clicked2(object sender, EventArgs e)

@@ -18,11 +18,15 @@
                     Text="Click here: "/>
                 <CheckBox 
                     x:Name="checkBox1"
+                    Color="#caad7e"
                     Margin="0,-2,0,0"
                     Grid.Column="1"
                     CheckedChanged="CheckBox_CheckedChanged"/>
             </Grid>
 
+            <RefreshView
+                Command="{Binding GetDay1ScheduleCommand}"
+                IsRefreshing="{Binding IsRefreshing}">
             <CollectionView BackgroundColor="Transparent"
                         x:Name="Day1View"
                         ItemsSource="{Binding Day1Schedule}"
@@ -98,6 +102,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            </RefreshView>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -18,6 +18,7 @@
                     Text="Click here: "/>
                 <CheckBox 
                     x:Name="checkBox1"
+                    Color="#caad7e"
                     Margin="0,-2,0,0"
                     Grid.Column="1"
                     CheckedChanged="CheckBox_CheckedChanged"/>

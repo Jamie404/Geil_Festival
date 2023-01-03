@@ -1,14 +1,18 @@
-﻿using L00150620_Geil_Festival.Services;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using L00150620_Geil_Festival.Services;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 
 namespace L00150620_Geil_Festival.ViewModel
 {
-    public class Day1ScheduleViewModel : BaseViewModel
+    public partial class Day1ScheduleViewModel : BaseViewModel
     {
         Day1ScheduleService _day1ScheduleService;
         public ObservableCollection<Model.Day1Sched> Day1Schedule { get; } = new();
         public Command GetDay1ScheduleCommand { get; }
+
+        [ObservableProperty]
+        bool isRefreshing;
 
         public Day1ScheduleViewModel(Day1ScheduleService day1ScheduleService)
         {
@@ -41,6 +45,7 @@ namespace L00150620_Geil_Festival.ViewModel
             {
                 // Finish/clean up code here
                 IsBusy = false;
+                IsRefreshing = false;
             }
         }
     }

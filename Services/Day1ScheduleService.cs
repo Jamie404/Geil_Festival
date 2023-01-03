@@ -15,12 +15,24 @@ namespace L00150620_Geil_Festival.Services
 
         public async Task<List<Day1Sched>> GetDay1ScheduleFileAsync()
         {
+            _day1Schedule.Clear();
+
             if (_day1Schedule.Count > 0)
             {
                 return _day1Schedule;
             }
-            using var stream = await FileSystem.OpenAppPackageFileAsync("day1.json");
-            using var reader = new StreamReader(stream);
+
+            // ***IMPORTANT - Comment out Android if running on Windows
+
+            // USE FOR WINDOWS
+            //var targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, "test.json");
+
+            // USE FOR ANDROID
+            var docsDirectory = Android.App.Application.Context.GetExternalFilesDir(Android.OS.Environment.DirectoryDocuments);
+            var targetFile = Path.Combine($"{docsDirectory.AbsoluteFile.Path}/test.json");
+
+
+            using var reader = new StreamReader(targetFile);
             var contents = await reader.ReadToEndAsync();
             _day1Schedule = JsonSerializer.Deserialize<List<Day1Sched>>(contents);
 

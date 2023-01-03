@@ -19,8 +19,18 @@ namespace L00150620_Geil_Festival.Services
             {
                 return _day2Schedule;
             }
-            using var stream = await FileSystem.OpenAppPackageFileAsync("day2.json");
-            using var reader = new StreamReader(stream);
+
+            // ***IMPORTANT - Comment out Android if running on Windows
+
+            // USE FOR WINDOWS
+            //var targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, "test.json");
+
+            // USE FOR ANDROID
+            var docsDirectory = Android.App.Application.Context.GetExternalFilesDir(Android.OS.Environment.DirectoryDocuments);
+            var targetFile = Path.Combine($"{docsDirectory.AbsoluteFile.Path}/test2.json");
+
+
+            using var reader = new StreamReader(targetFile);
             var contents = await reader.ReadToEndAsync();
             _day2Schedule = JsonSerializer.Deserialize<List<Day2Sched>>(contents);
 

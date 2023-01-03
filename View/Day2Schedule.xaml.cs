@@ -29,6 +29,8 @@ public partial class Day2Schedule : ContentPage
     {
         try
         {
+            Day1View.ItemsSource = "";
+
             var searchQuery = ViewModel2.Day2Schedule.Where(s => s.saved.Equals(true));
             testList.Clear();
 
@@ -39,12 +41,8 @@ public partial class Day2Schedule : ContentPage
 
             Day1View.ItemsSource = testList;
 
-            Console.WriteLine(testList);
-
-
-            checkLabel.IsVisible= false;
-            checkBox1.IsVisible= false;
-            Day1View.IsVisible= true;
+            Day1View.IsVisible = true;
+            checkBox1.IsChecked = false;
         }
         catch (Exception ex)
         {

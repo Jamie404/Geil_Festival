@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="L00150620_Geil_Festival.View.HomePage"
              Title="Welcome to Géil Music Fest">
-    
+
     <ScrollView>
         <VerticalStackLayout>
 
@@ -24,7 +24,7 @@
 
             <Label 
                 Padding="10,10,10,10"
-                Text="Below is an interactive list of the festival itinerary for the music festival including bands, stages, and personal scheduler. We hope you enjoy your time with us, and be sure to check out each page in the flyout menu for more information!"
+                Text="Below is an interactive list for the music festival that includes the bands, stages, and vendors. We hope you enjoy your time with us, and be sure to check out each page in the menu for more information!"
                 FontAttributes="Italic"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
@@ -48,31 +48,7 @@
 
             <Label 
                 Padding="10,10,10,10"
-                Text="Click the image above to view information about each band and artist coming to the Géil festival! We have a varied line up of talent coming to you from around the world to entertain you. The line-ups for each day can be found via the menu on the side."
-                FontAttributes="Italic"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-
-            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
-
-            <Label 
-                Padding="10,10,10,10"
-                Text="Scheduler"
-                FontSize="20"
-                FontAttributes="Bold"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center"/>
-
-            <ImageButton 
-                Source="schedulehome.jpg"
-                Aspect="AspectFill"
-                HeightRequest="300"
-                WidthRequest="300" 
-                Clicked="ImageButton_Clicked1"/>
-
-            <Label 
-                Padding="10,10,10,10"
-                Text="The above image will grant access to your own personal schedule and track which artist you wish to attend over the festival days. Be sure to save your favourites to know when and where they will be found!"
+                Text="Click the image for information about each artist/s coming to the Géil festival! We have a varied line up of talent coming to you from around the world to entertain you. The line-ups for each day can be found via the menu on the side."
                 FontAttributes="Italic"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
@@ -88,7 +64,7 @@
                 HorizontalOptions="Center"/>
 
             <ImageButton 
-                Source="stagehome.jpg"
+                Source="stagehomesmall.jpg"
                 Aspect="AspectFill"
                 HeightRequest="300"
                 WidthRequest="300" 
@@ -97,6 +73,30 @@
             <Label 
                 Padding="10,10,10,10"
                 Text="Tap the image to be transported to the various stages located within our festival encampment. Ensure you won't get lost looking for your friends while you enjoy the festivities."
+                FontAttributes="Italic"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Line X1="0" X2="200" HorizontalOptions="Center" Stroke="black" StrokeDashArray="1,1" StrokeDashOffset="6"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="Vendors"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <ImageButton 
+                Source="vendors.jpg"
+                Aspect="AspectFill"
+                HeightRequest="300"
+                WidthRequest="300" 
+                Clicked="ImageButton_Clicked1"/>
+
+            <Label 
+                Padding="10,10,10,10"
+                Text="By pressing the above clickable image, you will be able to gain an idea of what vendors are available on the festival grounds over the coming days. We aim to match all the needs for our attendees!"
                 FontAttributes="Italic"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />

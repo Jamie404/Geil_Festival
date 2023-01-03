@@ -51,6 +51,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\schedule.png" />
+	  <None Remove="Resources\Images\stage2small.jpg" />
+	  <None Remove="Resources\Images\stage3small.jpg" />
+	  <None Remove="Resources\Images\stagehomesmall.jpg" />
 	  <None Remove="Resources\Raw\day2.json" />
 	  <None Remove="Resources\Raw\sponsors.json" />
 	  <None Remove="Resources\Raw\vendors.json" />
@@ -113,9 +116,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\HomePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Scheduler.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Sponsors.xaml">

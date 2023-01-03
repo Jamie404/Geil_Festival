@@ -6,6 +6,7 @@
              x:DataType="viewmodel:Day2ViewModel"
              x:Class="L00150620_Geil_Festival.View.Day2Page"
              Title="Line-up Events">
+    
     <ScrollView>
         
         <VerticalStackLayout>
@@ -19,9 +20,7 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Day2">
-                        <Frame 
-                                HeightRequest="250"
-                                BackgroundColor="#f6f6db">
+                        <Frame HeightRequest="250" BackgroundColor="#f6f6db">
 
                             <Grid ColumnDefinitions="Auto,Auto,Auto"
                               RowDefinitions="Auto, Auto, Auto, 10">
@@ -77,6 +76,7 @@
 
                                 <CheckBox
                                     IsChecked="{Binding saved}"
+                                    CheckedChanged="CheckBox_CheckedChanged"
                                     HorizontalOptions="End"
                                     Margin="0,20,0,0"
                                     Color="#caad7e"

@@ -10,7 +10,6 @@ public partial class Day1Page : ContentPage
 {
     private Day1ViewModel ViewModel { get; set; }
     private ObservableCollection<Day1> filteredList = new ObservableCollection<Day1>();
-
     private Day1ViewModel ViewModel2 { get; set; }
     private ObservableCollection<Day1> testList = new ObservableCollection<Day1>();
 
@@ -38,27 +37,40 @@ public partial class Day1Page : ContentPage
 
         Day1View.ItemsSource = filteredList;
     }
-
-    private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    private async void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-        try
+        var test = ViewModel2.Day1.Where(s => s.saved.Equals(true));
+        testList.Clear();
+
+        foreach (Day1 b in test)
         {
-            var searchQuery = ViewModel2.Day1.Where(s => s.saved.Equals(true));
-            testList.Clear();
-
-            foreach (Day1 b in searchQuery)
-            {
-                testList.Add(b);
-            }
-
-            Day1View.ItemsSource = testList;
-
+            testList.Add(b);
         }
-        catch (Exception ex)
-        {
-            Debug.WriteLine(ex);
-            // Display an alert if an exception is raised
-            Shell.Current.DisplayAlert("Error", "Unable to filter Bands / Artists", "OK");
-        }
+
+        var options = new JsonSerializerOptions { WriteIndented = true };
+        string jsonString = JsonSerializer.Serialize(test, options);
+
+
+
+        // ***IMPORTANT - Comment out Android if running on Windows
+
+        // FOR ANDROID - Writes to Virtual SD card application documents directory
+        // Requires Virtual SD configuration on Android Emulator
+
+        // Locates App documents files directory
+
+        var docsDirectory = Android.App.Application.Context.GetExternalFilesDir(Android.OS.Environment.DirectoryDocuments);
+        // Saves to SD card
+
+        File.WriteAllText($"{docsDirectory.AbsoluteFile.Path}/test.json", jsonString);
+
+
+
+        // FOR WINDOWS - Writes to User Local Data
+
+        string targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, "test.json");
+        using FileStream outputStream = File.OpenWrite(targetFile);
+        using StreamWriter streamWriter = new StreamWriter(outputStream);
+        await streamWriter.WriteAsync(jsonString);
     }
 }
