@@ -105,7 +105,7 @@
 
             <Label 
                 Padding="10,10,10,10"
-                Text="© 2022 - L00150620"
+                Text="© 2023 - L00150620"
                 FontSize="10"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"/>
