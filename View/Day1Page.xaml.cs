@@ -1,7 +1,6 @@
 using L00150620_Geil_Festival.ViewModel;
 using System.Collections.ObjectModel;
 using L00150620_Geil_Festival.Model;
-using System.Diagnostics;
 using System.Text.Json;
 
 namespace L00150620_Geil_Festival.View;
