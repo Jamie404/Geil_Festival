@@ -51,7 +51,7 @@ public partial class Day2Page : ContentPage
 
 
 
-        // ***IMPORTANT - Comment out Android code if running on Windows OS
+        // ***IMPORTANT - Comment out Android code if running on Windows OS - Lines 59 + 60
 
         // FOR ANDROID - Writes to Virtual SD card application documents directory
         // REQUIRES VIRTUAL SD CARD CONFIGURATION ON EMULATOR
